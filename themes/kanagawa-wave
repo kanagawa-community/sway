@@ -1,0 +1,21 @@
+# Kanagawa Wave
+# https://github.com/kanagawa-community/sway
+
+set $kanagawa_bg #1f1f28
+set $kanagawa_bg_dark #16161d
+set $kanagawa_bg_light #2a2a37
+set $kanagawa_bg_select #363646
+set $kanagawa_fg #dcd7ba
+set $kanagawa_fg_dim #c8c093
+set $kanagawa_accent #7e9cd8
+set $kanagawa_indicator #7fb4ca
+set $kanagawa_urgent #e82424
+set $kanagawa_warning #ff9e3b
+
+client.focused           $kanagawa_accent $kanagawa_bg_select $kanagawa_fg $kanagawa_indicator $kanagawa_accent
+client.focused_inactive  $kanagawa_bg_select $kanagawa_bg_light $kanagawa_fg_dim $kanagawa_bg_select $kanagawa_bg_select
+client.focused_tab_title $kanagawa_bg_select $kanagawa_bg_light $kanagawa_fg
+client.unfocused         $kanagawa_bg_dark $kanagawa_bg_dark $kanagawa_fg_dim $kanagawa_bg_dark $kanagawa_bg_dark
+client.urgent            $kanagawa_urgent $kanagawa_urgent $kanagawa_bg $kanagawa_urgent $kanagawa_urgent
+client.placeholder       $kanagawa_bg $kanagawa_bg $kanagawa_fg $kanagawa_bg $kanagawa_bg
+client.background $kanagawa_bg

@@ -1,0 +1,21 @@
+# Kanagawa Dragon
+# https://github.com/kanagawa-community/sway
+
+set $kanagawa_bg #181616
+set $kanagawa_bg_dark #0d0c0c
+set $kanagawa_bg_light #282727
+set $kanagawa_bg_select #393836
+set $kanagawa_fg #c5c9c5
+set $kanagawa_fg_dim #c8c093
+set $kanagawa_accent #8ba4b0
+set $kanagawa_indicator #949fb5
+set $kanagawa_urgent #e82424
+set $kanagawa_warning #ff9e3b
+
+client.focused           $kanagawa_accent $kanagawa_bg_select $kanagawa_fg $kanagawa_indicator $kanagawa_accent
+client.focused_inactive  $kanagawa_bg_select $kanagawa_bg_light $kanagawa_fg_dim $kanagawa_bg_select $kanagawa_bg_select
+client.focused_tab_title $kanagawa_bg_select $kanagawa_bg_light $kanagawa_fg
+client.unfocused         $kanagawa_bg_dark $kanagawa_bg_dark $kanagawa_fg_dim $kanagawa_bg_dark $kanagawa_bg_dark
+client.urgent            $kanagawa_urgent $kanagawa_urgent $kanagawa_bg $kanagawa_urgent $kanagawa_urgent
+client.placeholder       $kanagawa_bg $kanagawa_bg $kanagawa_fg $kanagawa_bg $kanagawa_bg
+client.background $kanagawa_bg
